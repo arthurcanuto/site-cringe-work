@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Cadastro</title>
+    <link rel="stylesheet" href="formatos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html" class="menu-link">Home</a></li>
+                <li><a href="receitas.html" class="menu-link">Receitas</a></li>
+                <li><a href="cadastro.html" class="menu-link active">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cadastro-container">
+        <h1>Efetue seu Cadastro</h1>
+        <form action="mailto:seu-email@dominio.com" method="POST" class="formulario">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="form-input" maxlength="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="form-input" maxlength="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" class="form-input" maxlength="9" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" class="form-input" maxlength="100" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="numero">N°</label>
+                    <input type="text" id="numero" class="form-input" maxlength="10" required>
+                </div>
+
+                <div class="form-group half-width">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" class="form-input" maxlength="100">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group two-thirds-width">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" class="form-input" maxlength="100" required>
+                </div>
+
+                <div class="form-group one-third-width">
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" class="form-input" maxlength="2" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Jurema 2022</p>
+    </footer>
+</body>
+</html>
